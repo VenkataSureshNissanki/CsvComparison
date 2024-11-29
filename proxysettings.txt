@@ -1,0 +1,18 @@
+
+Download Certificate from below and save in c:\support
+http://repo.mfl-info.bmogc.net/files/bmoca.crt
+Rename file from bmoca.cer to bmoca.crt
+
+In anaconda prompt
+set REQUESTS_CA_BUNDLE=C:\support\bmoca.crt
+
+pip install --index-url https://pypi.bmogc.net ‘modulename’
+
+
+
+or
+
+
+
+pip install package --proxy=https://usernamewithnodomain:windowspassword@EBCSWG.bmogc.net:8080 -r requirements.txt
+
